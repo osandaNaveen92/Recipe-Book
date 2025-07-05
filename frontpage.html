@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Book</title>
+  <link rel="stylesheet" href="frontstyle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍽️ My Recipe Book</h1>
+
+    <!-- Recipe Form -->
+    <form id="recipe-form">
+      <input type="text" id="recipe-name" placeholder="Recipe Name" required />
+      <textarea id="ingredients" placeholder="Ingredients (comma-separated)" required></textarea>
+      <textarea id="steps" placeholder="Preparation Steps" required></textarea>
+      <input type="file" id="image" accept="image/*" required />
+      <button type="submit">Add Recipe</button>
+    </form>
+
+    <!-- Search -->
+    <input type="text" id="search" placeholder="Search by name or ingredient..." />
+
+    <!-- Recipe List -->
+    <div id="recipe-list"></div>
+  </div>
+
+  <script src="frontscript.js"></script>
+</body>
+</html>
