@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-image: url('source/Landing1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #222;
+}
+
+/* Sticky Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #d10000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 20px;
+  max-width: 500px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+}
+
+.search-bar button {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.auth-buttons button {
+  background: transparent;
+  border: 2px solid white;
+  padding: 5px 12px;
+  color: white;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-buttons .sign-up {
+  background: white;
+  color: #d10000;
+}
+
+/* Navbar */
+nav {
+  background: #c80000;
+  padding: 10px 0;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+nav button:hover::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  height: 2px;
+  width: 80%;
+  background-color: white;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 500px;
+  background: url('banana-pudding.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+}
+
+.hero-text {
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  color: #d10000;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.get-making {
+  background: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

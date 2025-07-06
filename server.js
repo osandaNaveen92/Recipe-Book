@@ -8,8 +8,8 @@ app.use(cors());
 app.use(bodyParser.json({ limit: '10mb' })); // To handle base64 image
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://naveen-RecipeBook:RX1pvg2XiUPv2SQb@cluster0.r5kedax.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-  useNewUrlParser: true,
+mongoose.connect('mongodb+srv://naveen-RecipeBook:30RI8J82OhbcF9VX@cluster0.r5kedax.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+  useNewUrlParser: true, 
   useUnifiedTopology: true
 }).then(() => console.log("MongoDB connected"))
   .catch(err => console.error("MongoDB error:", err));
@@ -20,7 +20,7 @@ const Recipe = mongoose.model('Recipe', new mongoose.Schema({
   ingredients: [String],
   steps: String,
   image: String // base64 string or URL
-}), 'recipes'); // <-- Explicitly set collection name to 'recipes'
+}), 'Recipes'); // <-- Explicitly set collection name to 'Recipes'
 
 // POST: Add Recipe
 app.post('/recipes', async (req, res) => {
